@@ -1,5 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
-module Lib
+module Party
   ( main
   ) where
 
@@ -17,9 +17,9 @@ import           Network.WebSockets.Connection  ( Connection )
 import           Sound.OSC.FD                  as O
 import           Wuss
 
-channel = "YOUR CHAN"
-botuser = "YOUR BOT"
-oauth = "YOUR OAUTH"
+channel = "isyuck"
+botuser = "kddzi"
+oauth = "oauth:00mthxmadwwnm5eqpxoimwbcijngn4"
 
 data TwitchMessage = TwitchMessage
   { username :: String

@@ -1,6 +1,6 @@
 module Main where
 
-import qualified Lib                           as L
+import qualified Party                         as P
 
 main :: IO ()
-main = L.main
+main = P.main
