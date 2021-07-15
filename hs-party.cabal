@@ -6,22 +6,20 @@ cabal-version: 1.12
 
 name:           hs-party
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/hs-party#readme>
-homepage:       https://github.com/githubuser/hs-party#readme
-bug-reports:    https://github.com/githubuser/hs-party/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2021 Author name here
+homepage:       https://github.com/isyuck/hs-party#readme
+bug-reports:    https://github.com/isyuck/hs-party/issues
+author:         isaac spicer
+maintainer:     isaac spicer
+copyright:      2021 isaac spicer
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
-    ChangeLog.md
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/hs-party
+  location: https://github.com/isyuck/hs-party
 
 library
   exposed-modules:
@@ -46,25 +44,6 @@ executable hs-party-exe
       Paths_hs_party
   hs-source-dirs:
       app
-  ghc-options: -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      base >=4.7 && <5
-    , hosc
-    , hs-party
-    , mtl
-    , network
-    , text
-    , websockets
-    , wuss
-  default-language: Haskell2010
-
-test-suite hs-party-test
-  type: exitcode-stdio-1.0
-  main-is: Spec.hs
-  other-modules:
-      Paths_hs_party
-  hs-source-dirs:
-      test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
